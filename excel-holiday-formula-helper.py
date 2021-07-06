@@ -10,4 +10,5 @@ final = [] #output
 for holiday in holidays:
     final.append( 'AND(' + holiday + '-B<>"",' + holiday + '-E<>"",B6>=' + holiday + '-B,B6<=' + holiday + '-E),')
 
-print(final)
+for afinal in final:
+    print(afinal)
