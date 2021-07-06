@@ -8,7 +8,7 @@ holidays = [ 'WBI', 'SB', 'THK', 'WBII' ] #list of holiday labels
 final = [] #output
 
 for holiday in holidays:
-    final.append( 'AND(' + holiday + '-B<>"",' + holiday + '-E<>"",B6>=' + holiday + '-B,B6<=' + holiday + '-E),')
+    final.append( 'AND(' + holiday + '_B<>"",' + holiday + '_E<>"",B6>=' + holiday + '_B,B6<=' + holiday + '_E),')
 
 for afinal in final:
     print(afinal)
